@@ -1,0 +1,51 @@
+In this assignment, you will be required to implement the Decision Tree algorithm from scratch
+using both (a) Information Gain and (b) Gini Index, to decide on the splitting attribute.
+you will implement it on a small toy dataset to gain confidence in your implementation.
+you will be asked to compare the accuracy of your implemented model with that of ​sci-kit learn​ .
+
+Consider that you are willing to buy a car and you have collected information
+having four attributes ‘price’, ‘maintenance’, ‘capacity’ and ‘airbag’, and are trying to predict
+whether a given car is ‘profitable’ or not. Assume all the four attributes are categorical, with
+discrete values.
+
+(Dataset)​
+Download the training and test data ​here​ . The sheet labelled “training data” contains
+the data to be trained on. The sheet named as “test data” contains the data on which you have
+to test your model.
+
+(Tasks)
+(A)​ Train your decision tree classifier on the train-data (where you will use “profitable”), using
+the impurity measure:
+a. Information Gain
+b. Gini Index
+
+Test your model on test-data (where the “profitable” label is unseen).
+After prediction, report the individual accuracies on the test data obtained using (a) and (b).
+Note that the “profitable” field should not be used in the classification process.
+
+For both cases, write your program such that it prints out the decision tree, in a particular format.
+
+For example, assume that your decision tree looks like the following - the attribute “price” is the
+root node and “maintenance” is the 2nd level node and “capacity” is the third level node (under
+maintenance = low). “yes” and “no” specifies the final value of “profitable”. Then the program
+should print out the decision tree as follows:
+price = low
+| maintenance = low
+| capacity = 4 : yes
+| maintenance = high : no
+
+Where subsequent levels are at increasing indentations from the left.
+
+
+(B) ​ Repeat the experiment using the decision tree algorithm implemented in ​ scikit learn​ , using
+both Information Gain and Gini index. Report the accuracies on test data.
+
+(Deliverables)​ Your report should contain :
+1. The decision tree
+2. The value of Information Gain and Gini Index of the root node using :
+a. Your model
+b. scikit learn
+3. The labels generated on the test data and accuracy on the test data using :
+a. Your model
+b. scikit learn
+
